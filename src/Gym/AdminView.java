@@ -68,7 +68,7 @@ public class AdminView extends JFrame {
 			}
 		});
 		btnNewButton_1.setBounds(262, 141, 106, 23);
-		contentPane.add(btnNewButton_1)
+		contentPane.add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("Basquetbol");
 		BasketReport BasketWindow = new BasketReport();
