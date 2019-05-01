@@ -68,7 +68,7 @@ public class AdminView extends JFrame {
 			}
 		});
 		btnNewButton_1.setBounds(262, 141, 106, 23);
-		contentPane.add(btnNewButton_1);
+		contentPane.add(btnNewButton_1)
 		
 		JButton btnNewButton_2 = new JButton("Basquetbol");
 		BasketReport BasketWindow = new BasketReport();
@@ -81,7 +81,7 @@ public class AdminView extends JFrame {
 		btnNewButton_2.setBounds(41, 264, 106, 23);
 		contentPane.add(btnNewButton_2);
 		
-		JButton btnNewButton_3 = new JButton("Volleyball");
+		JButton btnNewButton_3 = new JButton("Voleibol");
 		VolleyReport VolleyWindow = new VolleyReport();
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
