@@ -1,4 +1,4 @@
-package Gym;
+package Gym.Views;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
 
-public class ClienteView extends JFrame {
+public class EmpleadoView extends JFrame {
 
 	private JPanel contentPane;
 
@@ -23,7 +23,7 @@ public class ClienteView extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					ClienteView frame = new ClienteView();
+					EmpleadoView frame = new EmpleadoView();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -35,18 +35,18 @@ public class ClienteView extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public ClienteView() {
-		setTitle("Cliente");
+	public EmpleadoView() {
+		setTitle("Empleado");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 683, 480);
+		setBounds(100, 100, 677, 479);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblCliente = new JLabel("Selecciona tu area");
-		lblCliente.setBounds(33, 22, 133, 14);
-		contentPane.add(lblCliente);
+		JLabel lblSeleccionaTuArea = new JLabel("Selecciona tu area:");
+		lblSeleccionaTuArea.setBounds(47, 28, 135, 14);
+		contentPane.add(lblSeleccionaTuArea);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.addItem("Gimnasio");
@@ -59,14 +59,13 @@ public class ClienteView extends JFrame {
 				if(itemSeleccionado.equals("Gimnasio"))
 				{
 					Object [] turnos = {"Matutino","Vespertino","Nocturno"};
-					Object opcion =JOptionPane.showInputDialog(null, "Selecciona el turno en que estas ingresando al gym", "Elegir", JOptionPane.QUESTION_MESSAGE, null, turnos, turnos[0]);
-					JOptionPane.showMessageDialog(null, "¡Bienvenido!");
+					Object opcion =JOptionPane.showInputDialog(null, "Selecciona tu turno de trabajo:", "Elegir", JOptionPane.QUESTION_MESSAGE, null, turnos, turnos[0]);
 					dispose();
 				}
 			   }
 		});
-		
-		comboBox.setBounds(176, 19, 133, 20);
+		comboBox.setBounds(192, 25, 135, 20);
 		contentPane.add(comboBox);
 	}
+
 }

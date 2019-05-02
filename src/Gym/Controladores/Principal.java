@@ -1,6 +1,8 @@
-package Gym;
+package Gym.Controladores;
 
 import java.awt.EventQueue;
+
+import Gym.Views.PrincipalView;
 
 public class Principal 
 {

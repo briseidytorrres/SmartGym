@@ -1,4 +1,4 @@
-package Gym;
+package Gym.Views;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;

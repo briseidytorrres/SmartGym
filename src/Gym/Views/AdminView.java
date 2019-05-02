@@ -1,4 +1,4 @@
-package Gym;
+package Gym.Views;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -8,6 +8,12 @@ import java.awt.event.ActionListener;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
+import Gym.Controladores.BasketReport;
+import Gym.Controladores.FutReport;
+import Gym.Controladores.GymReport;
+import Gym.Controladores.VolleyReport;
+
 import javax.swing.JLabel;
 import javax.swing.JButton;
 

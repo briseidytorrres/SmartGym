@@ -1,4 +1,4 @@
-package Gym;
+package Gym.Controladores;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -8,7 +8,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
 
-public class BasketReport extends JFrame {
+public class VolleyReport extends JFrame {
 
 	private JPanel contentPane;
 
@@ -19,7 +19,7 @@ public class BasketReport extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					BasketReport frame = new BasketReport();
+					VolleyReport frame = new VolleyReport();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -31,16 +31,16 @@ public class BasketReport extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public BasketReport() {
+	public VolleyReport() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 677, 479);
+		setBounds(100, 100, 682, 478);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblReporteParaEl = new JLabel("Reporte para el area de Basquetbol");
-		lblReporteParaEl.setBounds(45, 51, 364, 14);
+		JLabel lblReporteParaEl = new JLabel("Reporte para el area de Volleyball");
+		lblReporteParaEl.setBounds(88, 85, 251, 14);
 		contentPane.add(lblReporteParaEl);
 	}
 

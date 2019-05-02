@@ -1,4 +1,4 @@
-package Gym;
+package Gym.Views;
 
 import java.awt.BorderLayout;
 import java.awt.EventQueue;
@@ -12,7 +12,7 @@ import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JComboBox;
 
-public class EmpleadoView extends JFrame {
+public class ClienteView extends JFrame {
 
 	private JPanel contentPane;
 
@@ -23,7 +23,7 @@ public class EmpleadoView extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					EmpleadoView frame = new EmpleadoView();
+					ClienteView frame = new ClienteView();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
@@ -35,18 +35,18 @@ public class EmpleadoView extends JFrame {
 	/**
 	 * Create the frame.
 	 */
-	public EmpleadoView() {
-		setTitle("Empleado");
+	public ClienteView() {
+		setTitle("Cliente");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 677, 479);
+		setBounds(100, 100, 683, 480);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblSeleccionaTuArea = new JLabel("Selecciona tu area:");
-		lblSeleccionaTuArea.setBounds(47, 28, 135, 14);
-		contentPane.add(lblSeleccionaTuArea);
+		JLabel lblCliente = new JLabel("Selecciona tu area");
+		lblCliente.setBounds(33, 22, 133, 14);
+		contentPane.add(lblCliente);
 		
 		JComboBox comboBox = new JComboBox();
 		comboBox.addItem("Gimnasio");
@@ -59,13 +59,14 @@ public class EmpleadoView extends JFrame {
 				if(itemSeleccionado.equals("Gimnasio"))
 				{
 					Object [] turnos = {"Matutino","Vespertino","Nocturno"};
-					Object opcion =JOptionPane.showInputDialog(null, "Selecciona tu turno de trabajo:", "Elegir", JOptionPane.QUESTION_MESSAGE, null, turnos, turnos[0]);
+					Object opcion =JOptionPane.showInputDialog(null, "Selecciona el turno en que estas ingresando al gym", "Elegir", JOptionPane.QUESTION_MESSAGE, null, turnos, turnos[0]);
+					JOptionPane.showMessageDialog(null, "¡Bienvenido!");
 					dispose();
 				}
 			   }
 		});
-		comboBox.setBounds(192, 25, 135, 20);
+		
+		comboBox.setBounds(176, 19, 133, 20);
 		contentPane.add(comboBox);
 	}
-
 }
