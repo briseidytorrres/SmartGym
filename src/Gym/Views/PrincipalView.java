@@ -12,8 +12,6 @@ import java.awt.event.ActionListener;
 
 import javax.swing.JLabel;
 import javax.swing.JButton;
-import javax.swing.SwingConstants;
-import java.awt.Font;
 
 public class PrincipalView extends JFrame {
 
@@ -23,16 +21,14 @@ public class PrincipalView extends JFrame {
 	public PrincipalView() {
 		setTitle("SmartGym");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 498, 323);
+		setBounds(100, 100, 688, 483);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
 		JLabel lblBienvenido = new JLabel("BIENVENIDO");
-		lblBienvenido.setFont(new Font("Tahoma", Font.BOLD, 20));
-		lblBienvenido.setHorizontalAlignment(SwingConstants.CENTER);
-		lblBienvenido.setBounds(89, 30, 191, 52);
+		lblBienvenido.setBounds(305, 31, 111, 14);
 		contentPane.add(lblBienvenido);
 		
 		ClienteView window2 = new ClienteView();
@@ -45,7 +41,7 @@ public class PrincipalView extends JFrame {
 				dispose();
 			}
 		});
-		btnCliente.setBounds(89, 137, 191, 23);
+		btnCliente.setBounds(262, 123, 191, 23);
 		contentPane.add(btnCliente);
 
 		EmpleadoView window3 = new EmpleadoView();
@@ -57,7 +53,7 @@ public class PrincipalView extends JFrame {
 				dispose();
 			}
 		});
-		btnEmpleado.setBounds(89, 176, 191, 23);
+		btnEmpleado.setBounds(262, 201, 191, 23);
 		contentPane.add(btnEmpleado);
 		
 		AdminView window4 = new AdminView();
@@ -69,7 +65,7 @@ public class PrincipalView extends JFrame {
 				dispose();
 			}
 		});
-		btnAdministrador.setBounds(89, 98, 191, 23);
+		btnAdministrador.setBounds(262, 264, 191, 23);
 		contentPane.add(btnAdministrador);
 	}
 	

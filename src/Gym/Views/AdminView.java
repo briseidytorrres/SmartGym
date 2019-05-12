@@ -16,13 +16,10 @@ import Gym.Controladores.VolleyReport;
 
 import javax.swing.JLabel;
 import javax.swing.JButton;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
 
 public class AdminView extends JFrame {
 
 	private JPanel contentPane;
-	private JTextField txtnombreDelGym;
 
 	/**
 	 * Launch the application.
@@ -46,14 +43,14 @@ public class AdminView extends JFrame {
 	public AdminView() {
 		setTitle("Administrador ");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 684, 330);
+		setBounds(100, 100, 684, 478);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel lblAdministrador = new JLabel("Reportes de area");
-		lblAdministrador.setBounds(41, 31, 284, 38);
+		JLabel lblAdministrador = new JLabel("Reportes por Áreas ");
+		lblAdministrador.setBounds(181, 52, 118, 14);
 		contentPane.add(lblAdministrador);
 		
 		JButton btnNewButton = new JButton("Gimnasio");
@@ -65,7 +62,7 @@ public class AdminView extends JFrame {
 				dispose();
 			}
 		});
-		btnNewButton.setBounds(41, 74, 106, 23);
+		btnNewButton.setBounds(41, 141, 106, 23);
 		contentPane.add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("Futbol");
@@ -76,10 +73,10 @@ public class AdminView extends JFrame {
 				dispose();
 			}
 		});
-		btnNewButton_1.setBounds(41, 114, 106, 23);
+		btnNewButton_1.setBounds(262, 141, 106, 23);
 		contentPane.add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("Box");
+		JButton btnNewButton_2 = new JButton("Basquetbol");
 		BasketReport BasketWindow = new BasketReport();
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -87,7 +84,7 @@ public class AdminView extends JFrame {
 				dispose();
 			}
 		});
-		btnNewButton_2.setBounds(41, 158, 106, 23);
+		btnNewButton_2.setBounds(41, 264, 106, 23);
 		contentPane.add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("Voleibol");
@@ -98,28 +95,8 @@ public class AdminView extends JFrame {
 				dispose();
 			}
 		});
-		btnNewButton_3.setBounds(41, 197, 106, 23);
+		btnNewButton_3.setBounds(262, 264, 106, 23);
 		contentPane.add(btnNewButton_3);
-		
-		JButton btnClientesRegistrados = new JButton("Clientes Registrados");
-		btnClientesRegistrados.setBounds(290, 135, 195, 38);
-		contentPane.add(btnClientesRegistrados);
-		
-		JButton btnNewButton_4 = new JButton("Entrenadores");
-		btnNewButton_4.setBounds(290, 189, 195, 38);
-		contentPane.add(btnNewButton_4);
-		
-		JLabel lblInformacionDelGimnasio = new JLabel("Informacion del gimnasio");
-		lblInformacionDelGimnasio.setBounds(290, 40, 195, 20);
-		contentPane.add(lblInformacionDelGimnasio);
-		
-		txtnombreDelGym = new JTextField();
-		txtnombreDelGym.setHorizontalAlignment(SwingConstants.CENTER);
-		txtnombreDelGym.setEditable(false);
-		txtnombreDelGym.setText("*Nombre del gym*");
-		txtnombreDelGym.setBounds(290, 72, 195, 26);
-		contentPane.add(txtnombreDelGym);
-		txtnombreDelGym.setColumns(10);
 	}
 
 }

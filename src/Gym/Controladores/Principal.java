@@ -10,8 +10,7 @@ public class Principal
 	{
 		PrincipalView window = new PrincipalView();
 		window.setVisible(true);
-		/*
-		 * EventQueue.invokeLater(new Runnable() {
+		/*EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
 					PrincipalView frame = new PrincipalView();
@@ -20,7 +19,6 @@ public class Principal
 					e.printStackTrace();
 				}
 			}
-			una mamada o algo
 		});*/
 	}
 }
