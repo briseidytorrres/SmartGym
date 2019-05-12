@@ -5,6 +5,10 @@ public class Gimnacio {
 	private String Nombre ;
 	private String Direccion;
 	
+	public Gimnacio() {
+		
+	}
+
 	public Gimnacio(int id, String nombre, String direccion) {
 		super();
 		this.id = id;
