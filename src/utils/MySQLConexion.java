@@ -11,7 +11,7 @@ public static Connection getConexion() {
 		
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			String url = "jdbc:mysql://localhost/bd_conector";
+			String url = "jdbc:mysql://localhost/gym";
 			String usuario = "root";
 			String contraseña ="";
 			
